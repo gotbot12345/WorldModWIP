@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class WorldModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, WorldMod.MOD_ID);
 
-    public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC).tab(WorldModCreativeModeTabs.WORLD_MOD)));
 
     public static void register(IEventBus eventBus)
     {

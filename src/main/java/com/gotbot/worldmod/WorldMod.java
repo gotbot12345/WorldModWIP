@@ -1,5 +1,6 @@
 package com.gotbot.worldmod;
 
+import com.gotbot.worldmod.block.WorldModBlocks;
 import com.gotbot.worldmod.item.WorldModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
@@ -32,6 +33,7 @@ public class WorldMod
         // Register the setup method for modloading
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        WorldModBlocks.register(eventBus);
         WorldModItems.register(eventBus);
 
         eventBus.addListener(this::setup);
