@@ -10,4 +10,11 @@ public class WorldModCreativeModeTabs {
             return new ItemStack(WorldModItems.SILVER_INGOT.get());
         }
     };
+
+    public static final CreativeModeTab WORLD_MOD_TESTING = new CreativeModeTab("worldmodtesting") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(WorldModItems.TEST_ITEM.get());
+        }
+    };
 }

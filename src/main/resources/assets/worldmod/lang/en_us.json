@@ -1,7 +1,9 @@
 {
+  "item.worldmod.test_item": "Test Item",
   "item.worldmod.silver_ingot": "Silver Ingot",
 
   "block.worldmod.silver_block": "Block of Silver",
 
-  "itemGroup.worldmodtab": "World Mod"
+  "itemGroup.worldmodtab": "World Mod",
+  "itemGroup.worldmodtesting": "World Mod Testing"
 }
