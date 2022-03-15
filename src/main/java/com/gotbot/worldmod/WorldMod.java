@@ -2,6 +2,7 @@ package com.gotbot.worldmod;
 
 import com.gotbot.worldmod.block.WorldModBlocks;
 import com.gotbot.worldmod.item.WorldModItems;
+import com.gotbot.worldmod.sound.WorldModSounds;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -35,6 +36,7 @@ public class WorldMod
 
         WorldModBlocks.register(eventBus);
         WorldModItems.register(eventBus);
+        WorldModSounds.register(eventBus);
 
         eventBus.addListener(this::setup);
 
