@@ -17,6 +17,8 @@ public class WorldModItems {
 
     public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC).tab(WorldModCreativeModeTabs.WORLD_MOD)));
 
+    public static final RegistryObject<Item> SILVER_NUGGET = ITEMS.register("silver_nugget", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC).tab(WorldModCreativeModeTabs.WORLD_MOD)));
+
     public static final RegistryObject<Item> TEST_ITEM = ITEMS.register("test_item", () -> new TestItem(new Item.Properties().tab(WorldModCreativeModeTabs.WORLD_MOD_TESTING)));
 
     public static void register(IEventBus eventBus)

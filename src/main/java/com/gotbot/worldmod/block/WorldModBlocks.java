@@ -25,6 +25,8 @@ public class WorldModBlocks {
 
     public static final RegistryObject<Block> SILVER_ORE = registerBlock("silver_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(3.0f, 3.0f)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
+    public static final RegistryObject<Block> DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(4.5f, 3.0f)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
     public static final RegistryObject<Block> SILVER_BLOCK = registerBlock("silver_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0f, 6.0f)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     public static final RegistryObject<Block> TEST_BLOCK = registerTestBlock("test_block", () -> new TestBlock(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops()));
