@@ -1,7 +1,6 @@
 package com.gotbot.worldmod.block;
 
 import com.gotbot.worldmod.WorldMod;
-import com.gotbot.worldmod.block.custom.TestBlock;
 import com.gotbot.worldmod.item.WorldModCreativeModeTabs;
 import com.gotbot.worldmod.item.WorldModItems;
 import net.minecraft.world.item.BlockItem;
@@ -25,28 +24,14 @@ public class WorldModBlocks {
 
     public static final RegistryObject<Block> SILVER_ORE = registerBlock("silver_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(3.0f, 3.0f)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-    public static final RegistryObject<Block> SILVER_BLOCK = registerBlock("silver_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0f, 6.0f)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(4.5f, 3.0f)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-    public static final RegistryObject<Block> TEST_BLOCK = registerTestBlock("test_block", () -> new TestBlock(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> SILVER_BLOCK = registerBlock("silver_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(5.0f, 6.0f)), CreativeModeTab.TAB_BUILDING_BLOCKS);
 
     private static <T extends Block> RegistryObject<Block> registerBlock(String name, Supplier<T> blockProp, CreativeModeTab tab)
     {
         RegistryObject<Block> block = BLOCKS.register(name, blockProp);
-        WorldModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab).tab(WorldModCreativeModeTabs.WORLD_MOD)));
-        return block;
-    }
-
-    private static <T extends Block> RegistryObject<Block> registerBlockNoTab(String name, Supplier<T> blockProp)
-    {
-        RegistryObject<Block> block = BLOCKS.register(name, blockProp);
-        WorldModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(WorldModCreativeModeTabs.WORLD_MOD)));
-        return block;
-    }
-
-    private static <T extends Block> RegistryObject<Block> registerTestBlock(String name, Supplier<T> blockProp)
-    {
-        RegistryObject<Block> block = BLOCKS.register(name, blockProp);
-        WorldModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(WorldModCreativeModeTabs.WORLD_MOD_TESTING)));
+        WorldModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
         return block;
     }
 

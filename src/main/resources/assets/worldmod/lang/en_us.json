@@ -1,11 +1,9 @@
 {
-  "item.worldmod.test_item": "Test Item",
+  "block.worldmod.silver_ore": "Silver Ore",
+  "block.worldmod.deepslate_silver_ore": "Deepslate Silver Ore",
+  "block.worldmod.silver_block": "Block of Silver",
   "item.worldmod.raw_silver": "Raw Silver",
   "item.worldmod.silver_ingot": "Silver Ingot",
-
-  "block.worldmod.silver_ore": "Silver Ore",
-  "block.worldmod.silver_block": "Block of Silver",
-
-  "itemGroup.worldmodtab": "World Mod",
-  "itemGroup.worldmodtesting": "World Mod Testing"
+  "item.worldmod.silver_nugget": "Silver Nugget",
+  "itemGroup.worldmodtab": "World Mod"
 }
